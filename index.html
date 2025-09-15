@@ -1,13 +1,77 @@
 <!DOCTYPE html>
+<html lang="pl">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Szklana Wiedza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body{
-      background:black;
-      color:white;
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #00ffff;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-  <h1>nauka w jednym miejscu</h1>
+  <h1>📚 Szklana Wiedza</h1>
+  <div class="container">
+    <div class="card">
+      <h2>Matematyka: Funkcje</h2>
+      <p>Omówienie funkcji liniowych, wykresy, miejsca zerowe i interpretacja współczynników.</p>
+    </div>
+    <div class="card">
+      <h2>Historia: II Wojna Światowa</h2>
+      <p>Przyczyny konfliktu, najważniejsze bitwy, skutki dla Polski i świata.</p>
+    </div>
+    <div class="card">
+      <h2>Biologia: Komórka</h2>
+      <p>Budowa komórki, organelle, różnice między komórką roślinną a zwierzęcą.</p>
+    </div>
+  </div>
 </body>
 </html>
