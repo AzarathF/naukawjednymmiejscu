@@ -6,6 +6,10 @@
   <title>Szklana Wiedza</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -19,41 +23,50 @@
 
     h1 {
       margin-bottom: 2rem;
-      font-size: 2.5rem;
-      text-shadow: 0 0 10px #00ffff;
+      font-size: 3rem;
+      text-shadow: 0 0 15px #00ffff;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffff; }
+      to { text-shadow: 0 0 25px #00ffff; }
     }
 
     .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      display: flex;
+      flex-direction: column;
       gap: 2rem;
       width: 100%;
-      max-width: 1200px;
+      max-width: 800px;
     }
 
     .card {
-      backdrop-filter: blur(10px);
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 1.5rem;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-      transition: transform 0.3s ease;
+      backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+      transform: translateY(-5px);
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
     }
 
     .card h2 {
       margin-top: 0;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       color: #00ffff;
+      text-shadow: 0 0 5px #00ffff;
     }
 
     .card p {
-      font-size: 1rem;
-      line-height: 1.5;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #e0f7fa;
     }
   </style>
 </head>
@@ -61,16 +74,28 @@
   <h1>📚 Szklana Wiedza</h1>
   <div class="container">
     <div class="card">
-      <h2>Matematyka: Funkcje</h2>
-      <p>Omówienie funkcji liniowych, wykresy, miejsca zerowe i interpretacja współczynników.</p>
+      <h2>C++</h2>
+      <p>Podstawy języka, wskaźniki, klasy, dziedziczenie, zarządzanie pamięcią i kompilacja.</p>
     </div>
     <div class="card">
-      <h2>Historia: II Wojna Światowa</h2>
-      <p>Przyczyny konfliktu, najważniejsze bitwy, skutki dla Polski i świata.</p>
+      <h2>Java</h2>
+      <p>Programowanie obiektowe, interfejsy, wyjątki, kolekcje i aplikacje desktopowe oraz webowe.</p>
     </div>
     <div class="card">
-      <h2>Biologia: Komórka</h2>
-      <p>Budowa komórki, organelle, różnice między komórką roślinną a zwierzęcą.</p>
+      <h2>JavaScript</h2>
+      <p>DOM, zdarzenia, funkcje, obiekty, asynchroniczność, API i podstawy frameworków.</p>
+    </div>
+    <div class="card">
+      <h2>Python</h2>
+      <p>Składnia, typy danych, biblioteki, programowanie funkcyjne, AI i analiza danych.</p>
+    </div>
+    <div class="card">
+      <h2>SQL</h2>
+      <p>Tworzenie zapytań, SELECT, JOIN, GROUP BY, podzapytania i zarządzanie bazami danych.</p>
+    </div>
+    <div class="card">
+      <h2>Go (Golang)</h2>
+      <p>Struktury, goroutines, kanały, wydajność, serwery HTTP i mikroserwisy.</p>
     </div>
   </div>
 </body>
