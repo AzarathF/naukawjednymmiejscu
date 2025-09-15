@@ -46,8 +46,32 @@
   <h1>💡 JavaScript – Lekcje</h1>
 
   <div class="lesson">
-    <h2>Wprowadzenie do JavaScript</h2>
-    <p>Tu wpisz informacje o zmiennych, typach danych, operatorach i strukturze kodu JS.</p>
+    <h2>Rozbudowana pętla zawierające podzielnośc przez 3 podzielność przez 9 ale nie przez 6 nieparzystość i parzystość sume itd.</h2>
+    <p>let nieparzyste = 0;
+let parzyste = 0;
+
+for(let i=0; i<101;i++){
+    if(i%2 !=0 ){
+        nieparzyste++;
+    }else if(i % 3 === 0){
+    console.log(i + " podzielne przez 3");
+    }else{
+        parzyste++
+    }
+
+    if (i % 9 === 0 && i % 6 !==0){
+        console.log(i + "podzielne przez 9 ale nie przez 6")
+    }
+    
+    
+};
+
+
+
+console.log(" ")
+console.log("nieparzyste: " + nieparzyste)
+console.log("parzyste: " + parzyste)
+console.log(parzyste + nieparzyste);</p>
   </div>
 
   <div class="lesson">
@@ -72,3 +96,4 @@
 
 </body>
 </html>
+
