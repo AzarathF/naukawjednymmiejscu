@@ -41,6 +41,11 @@
       max-width: 800px;
     }
 
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
     .card {
       backdrop-filter: blur(12px);
       background: rgba(255, 255, 255, 0.08);
@@ -73,30 +78,42 @@
 <body>
   <h1>📚 Szklana Wiedza</h1>
   <div class="container">
-    <div class="card">
-      <h2>C++</h2>
-      <p>Podstawy języka, wskaźniki, klasy, dziedziczenie, zarządzanie pamięcią i kompilacja.</p>
-    </div>
-    <div class="card">
-      <h2>Java</h2>
-      <p>Programowanie obiektowe, interfejsy, wyjątki, kolekcje i aplikacje desktopowe oraz webowe.</p>
-    </div>
-    <div class="card">
-      <h2>JavaScript</h2>
-      <p>DOM, zdarzenia, funkcje, obiekty, asynchroniczność, API i podstawy frameworków.</p>
-    </div>
-    <div class="card">
-      <h2>Python</h2>
-      <p>Składnia, typy danych, biblioteki, programowanie funkcyjne, AI i analiza danych.</p>
-    </div>
-    <div class="card">
-      <h2>SQL</h2>
-      <p>Tworzenie zapytań, SELECT, JOIN, GROUP BY, podzapytania i zarządzanie bazami danych.</p>
-    </div>
-    <div class="card">
-      <h2>Go (Golang)</h2>
-      <p>Struktury, goroutines, kanały, wydajność, serwery HTTP i mikroserwisy.</p>
-    </div>
+    <a href="cpp.html" class="card-link">
+      <div class="card">
+        <h2>C++</h2>
+        <p>Podstawy języka, wskaźniki, klasy, dziedziczenie, zarządzanie pamięcią i kompilacja.</p>
+      </div>
+    </a>
+    <a href="java.html" class="card-link">
+      <div class="card">
+        <h2>Java</h2>
+        <p>Programowanie obiektowe, interfejsy, wyjątki, kolekcje i aplikacje desktopowe oraz webowe.</p>
+      </div>
+    </a>
+    <a href="javascript.html" class="card-link">
+      <div class="card">
+        <h2>JavaScript</h2>
+        <p>DOM, zdarzenia, funkcje, obiekty, asynchroniczność, API i podstawy frameworków.</p>
+      </div>
+    </a>
+    <a href="python.html" class="card-link">
+      <div class="card">
+        <h2>Python</h2>
+        <p>Składnia, typy danych, biblioteki, programowanie funkcyjne, AI i analiza danych.</p>
+      </div>
+    </a>
+    <a href="sql.html" class="card-link">
+      <div class="card">
+        <h2>SQL</h2>
+        <p>Tworzenie zapytań, SELECT, JOIN, GROUP BY, podzapytania i zarządzanie bazami danych.</p>
+      </div>
+    </a>
+    <a href="go.html" class="card-link">
+      <div class="card">
+        <h2>Go (Golang)</h2>
+        <p>Struktury, goroutines, kanały, wydajność, serwery HTTP i mikroserwisy.</p>
+      </div>
+    </a>
   </div>
 </body>
 </html>
