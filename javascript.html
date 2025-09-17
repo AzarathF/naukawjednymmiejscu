@@ -49,7 +49,6 @@
     <h2>Rozbudowana pętla zawierające podzielnośc przez 3 podzielność przez 9 ale nie przez 6 nieparzystość i parzystość sume itd.</h2>
     <p>let nieparzyste = 0;
 let parzyste = 0;
-
 for(let i=0; i<101;i++){
     if(i%2 !=0 ){
         nieparzyste++;
@@ -58,20 +57,24 @@ for(let i=0; i<101;i++){
     }else{
         parzyste++
     }
-
     if (i % 9 === 0 && i % 6 !==0){
         console.log(i + "podzielne przez 9 ale nie przez 6")
     }
-    
-    
 };
-
-
 
 console.log(" ")
 console.log("nieparzyste: " + nieparzyste)
 console.log("parzyste: " + parzyste)
 console.log(parzyste + nieparzyste);</p>
+    
+    <p>let tab = [4, 8, 16, 18, 19, 20];
+let i = 0;
+<br><br>pętla while<br><br>
+while (tab[i]%2 == 0) {
+    console.log(tab[i]);
+    i++;
+}
+    </p>
   </div>
 
   <div class="lesson">
@@ -96,4 +99,5 @@ console.log(parzyste + nieparzyste);</p>
 
 </body>
 </html>
+
 
